@@ -1,3 +1,54 @@
-.main-background {
-    background-image: url("./assets/bg-clean.jpg");
+:root {
+    --electric-red: #E30004;
+    --ferrari-red: #FF2A02;
+    /* white */
+    --cultured: #F4F5F6;
+    --vampire-black: #0A0A0A;
+    /* black */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cultured);
+    padding: 10px 50px 10px 10px;
+}
+
+.main-bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    background: url("/assets/bg-clean.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.nav-container {
+    position: absolute;
+    margin: 150px;
+    display: block;
+    width: min-content;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+
+.topnav a {
+    font-size: 48px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255, .1);
 }
