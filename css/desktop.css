@@ -17,18 +17,30 @@
 
 header {
     display: flex;
+    width: 100vw;
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px 10px 10px;
 }
 
-.main-bg {
-    width: 100vw;
-    height: 100vh;
-    background: url("../assets/bg-clean.jpg");
+header nav {
+    display: inline;
+    padding: 0 0 0 70px;
+}
+
+header nav a {
+    padding: 0 8px;
+    text-decoration: none;
+}
+
+main {
+    width: 100vmax;
+    height: 100vmax;
+    background-image: url("../assets/bg-clean.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
     position: relative;
 }
