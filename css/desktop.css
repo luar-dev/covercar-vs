@@ -12,14 +12,13 @@
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
-    color: white;
+    box-sizing: border-box;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--cultured);
     padding: 10px 50px 10px 10px;
 }
 
@@ -45,9 +44,27 @@ header {
     overflow: hidden;
 }
 
-
 .topnav a {
     font-size: 48px;
     text-decoration: none;
     background-color: rgb(255, 255, 255, .1);
+    color: white;
+}
+
+.footer-container {
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--cultured);
+}
+
+.footer-container a {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--vampire-black);
+}
+
+.footer-container h4 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
