@@ -38,31 +38,54 @@ header nav a {
     width: 100%;
     min-width: 375px;
     height: 480px;
-    /* position: absolute; */
-
     background-image: url("../assets/bg-clean.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
 }
 
-.bg-image nav {
+/* .bg-image nav {
     position: absolute;
     margin: 130px 0 0 40px;
     display: block;
     width: min-content;
-}
+} */
 
-.bg-image a {
+/* .bg-image a {
     margin-bottom: 30px;
     font-size: 38px;
     text-decoration: underline solid white 1px;
     text-underline-offset: 5px;
-    /* background-color: rgb(255, 255, 255, .1); */
+    background-color: rgb(255, 255, 255, .1);
     color: white;
+} */
+
+.steps-numbers,
+.steps-name {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 375px;
 }
 
-main section {
+.step {
+    margin-top: 30px;
+    color: var(--vampire-black);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    background-color: var(--cultured);
+
+}
+
+.steps-name {
+    margin: 10px 0 30px 0;
+}
+
+.custom_made {
     background-color: var(--electric-red);
     color: white;
     text-align: center;
