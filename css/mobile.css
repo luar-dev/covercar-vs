@@ -120,10 +120,26 @@ header nav a {
     color: var(--cultured);
     font-size: 16px;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
 .contact_phone {
     margin-top: 20px;
+}
+
+.contact_days,
+.contact_hours {
+    color: var(--cultured);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.contact_sat {
+    margin-top: 20px;
+}
+
+.sat_hours {
+    margin-bottom: 20px;
 }
 
 .footer-container {
