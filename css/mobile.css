@@ -85,6 +85,10 @@ header nav a {
     font-weight: 700;
 }
 
+.viewer {
+    width: 100%;
+}
+
 .custom_made {
     background-color: var(--electric-red);
     color: white;
