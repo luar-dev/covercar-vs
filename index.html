@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://unpkg.com/vue@3"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -12,22 +14,22 @@
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/popup.css">
 
-    <title>Document</title>
+    <title>Covercar Cubreasientos</title>
 </head>
 <body>
 
-    <header>
-        <img src="./assets/2022-covercar-logo.png" alt="Covercar Logo" width="150px">
-
-        <nav>
-            <a href="#design">Diseña</a>
-            <a href="#">Cotiza</a>
-            <a href="#contact">Contacto</a>
-        </nav>
-
-    </header>
     
-    <main>
+    <main id="app">
+        <header>
+            <img :src="main_bg_image" alt="Covercar Logo" width="150">
+    
+            <nav>
+                <a href="#design">Diseña</a>
+                <a href="#">Cotiza</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </header>
+
         <section class="bg-image"></section>
         
         <section class="steps-numbers">
@@ -41,18 +43,18 @@
         </section>
         
         <section class="custom_made">
-            <p>Fabricamos cubreasientos a la medida, todas las marcas.</p>
-            <img class="patterns_icon" src="./assets/textile-industry-icons/patterns.png" alt="">
+            <p>Fabricamos {{ product }} a la medida, todas las marcas.</p>
+            <img class="patterns_icon" :src="custom_made_patterns_icon" alt="">
         </section>
         
         <section id="design" class="seat">
-            <p>Diseña tu Modelo</p>
+            <p>{{ design_title }}</p>
         </section>
 
         <section id="contact" class="contact">
             <p>Contacto</p>
 
-            <a class="contact_email" href="mailto:">atencion@covercar.mx</a>
+            <a class="contact_email" href="mailto:">{{ cs_email }}</a>
             <p class="contact_phone">Telefono: (55) 1234 0000</p>
 
             <p class="contact_days">Lunes - Viernes</p>
@@ -62,7 +64,7 @@
             <p class="contact_hours sat_hours">9am - 4pm</p>
 
 
-            <a href="https://www.facebook.com/CubreasientosCoverCar"><img src="./assets/f_logo_RGB-Blue_58.png" alt="Facebook Link"  width="25px"></a>
+            <a href="https://www.facebook.com/CubreasientosCoverCar"><img src="./assets/images/f_logo_RGB-Blue_58.png" alt="Facebook Link"  width="25px"></a>
         </section>
     </main>
     
@@ -161,6 +163,13 @@
             </div>
         </footer>
 
+    <!-- Import App -->
+    <script src="./main.js"></script>
+
+    <!-- Mount App -->
+    <script>
+        const mountApp = app.mount('#app')
+    </script>
 
     <script>
         // Get the modal

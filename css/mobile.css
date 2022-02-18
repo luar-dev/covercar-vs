@@ -24,7 +24,6 @@ header {
 
 header nav {
     display: inline;
-    
 }
 
 header nav a {
@@ -38,7 +37,7 @@ header nav a {
     width: 100%;
     min-width: 375px;
     height: 480px;
-    background-image: url("../assets/bg-clean.jpg");
+    background-image: url("../assets/images/bg-clean.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
