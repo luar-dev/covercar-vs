@@ -104,14 +104,37 @@ header nav a {
 .seat {
     width: 100%;
     padding: 30px 0;
-    color: var(--ferrari-red);
-    font-size: 20px;
     background-color: white;
     text-align: center;
 }
 
-.seat p {
+.design_title {
+    font-size: 20px;
+    color: var(--ferrari-red);
     margin-bottom: 30px;
+}
+
+.seat_palette {
+    min-width: 375px;
+}
+
+.seat_combination {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* line-height: 20px; */
+}
+
+.black_gray {
+    background: linear-gradient( 90deg, black, black 50%, white 50%, white 50%, rgb(129, 129, 129) 50% ); 
+}
+
+.gray_black {
+    background: linear-gradient( 90deg, rgb(129, 129, 129), rgb(129, 129, 129) 50%, white 50%, white 50%, black 50% );
+}
+
+.black_beige {
+    background: linear-gradient( 90deg, black, black 50%, white 50%, white 50%, rgb(214, 174, 86) 50% ); 
 }
 
 .contact {
