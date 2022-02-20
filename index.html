@@ -56,39 +56,24 @@
         
         <section id="design" class="seat">
             <p class="design_title">{{ design_title }}</p>
-            <img v-show="seat_blank" src="./assets/images/seat_blank.png" alt="">
-            <img v-show="seat_black_gray" src="./assets/images/seat-black_gray.png" alt="">
-            <img v-show="seat_gray_black" src="./assets/images/seat-gray_black.png" alt="">
-            <img v-show="seat_black_beige" src="./assets/images/seat-black_beige.png" alt="">
+
+            <img :src="imagePath" alt="">
+
+            <p>Tonos</p>
             <div class="seat_palette">
-                <p>Tonos</p>
-                <p v-on:click="
-                    seat_blank = false,
-                    seat_black_gray = true,
-                    seat_gray_black = false,
-                    seat_black_beige = false"
-                    class="seat_combination black_gray"></p>
 
-                <p v-on:click="
-                    seat_blank = false,
-                    seat_black_gray = false,
-                    seat_gray_black = true,
-                    seat_black_beige = false"
-                    class="seat_combination gray_black"></p>
-
-                <p v-on:click="
-                    seat_blank = false,
-                    seat_black_gray = false,
-                    seat_gray_black = false,
-                    seat_black_beige = true"
-                    class="seat_combination black_beige"></p>
+                <p v-for="combination in seatColorCombinations"
+                    @click="setColorCombination(combination.imagePath)"
+                    :class="combination.class"></p>
             </div>
-            <div>
+
+            <!-- <div>
                 <p>Materiales</p>
                 <ul>
-                    <li v-for="material in materials">{{ material.name }}</li>
+                    <li v-for="material in materials" :key="material.id">{{ material.name }}</li>
                 </ul>
-            </div>
+            </div> -->
+
         </section>
 
         <section id="contact" class="contact">
