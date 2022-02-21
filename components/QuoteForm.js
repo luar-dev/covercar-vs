@@ -2,7 +2,7 @@ app.component('quote-form', {
     template:
     /*html*/
     `<form action="">
-        <h3>Leave a review</h3>
+        <h3>Cotiza</h3>
         <label for="name">Name:</label>
         <input id="name" type="text">
 
