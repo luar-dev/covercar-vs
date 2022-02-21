@@ -17,7 +17,6 @@
     <title>Covercar Cubreasientos</title>
 </head>
 <body>
-
     
     <main id="app">
         <header>
@@ -34,12 +33,10 @@
         
         <section class="steps-numbers">
             <p class="step">1</p>
+            <div class="steps-line"></div>
             <p class="step">2</p>
-        </section>
-        
-        <section class="steps-name">
-            <p>Diseña</p>
-            <p>Cotiza</p>
+            <p class="step-tag">Diseña</p>
+            <p class="step-tag">Cotiza</p>
         </section>
         
         <!-- Promo video -->
@@ -54,27 +51,7 @@
             <img class="patterns_icon" :src="custom_made_patterns_icon" alt="">
         </section>
         
-        <section id="design" class="seat">
-            <p class="design_title">{{ design_title }}</p>
-
-            <img :src="imagePath" alt="">
-
-            <p>Tonos</p>
-            <div class="seat_palette">
-
-                <p v-for="combination in seatColorCombinations"
-                    @click="setColorCombination(combination.imagePath)"
-                    :class="combination.class"></p>
-            </div>
-
-            <!-- <div>
-                <p>Materiales</p>
-                <ul>
-                    <li v-for="material in materials" :key="material.id">{{ material.name }}</li>
-                </ul>
-            </div> -->
-
-        </section>
+        <seat-display></seat-display>
 
         <section id="contact" class="contact">
             <p>Contacto</p>
@@ -190,6 +167,11 @@
 
     <!-- Import App -->
     <script src="./main.js"></script>
+
+    <!-- Import Components -->
+    <script src="./components/SeatDisplay.js"></script>
+    <script src="./components/ColorPalette.js"></script>
+    <script src="./components/QuoteForm.js"></script>
 
     <!-- Mount App -->
     <script>

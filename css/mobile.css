@@ -59,30 +59,39 @@ header nav a {
     color: white;
 } */
 
-.steps-numbers,
-.steps-name {
+.steps-numbers {
     text-align: center;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     min-width: 375px;
+    align-items: center;
 }
 
 .step {
     margin-top: 30px;
-    color: var(--vampire-black);
+    color: var(--cultured);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 30px;
-    background-color: var(--cultured);
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 24px;
+    background-color: var(--vampire-black);
 
 }
 
-.steps-name {
-    margin: 10px 0 30px 0;
-    font-weight: 700;
+.steps-numbers .steps-line {
+    width: 150px;
+    height: 3px;
+    margin-top: 30px;
+    background: var(--vampire-black);
+}
+
+.step-tag {
+    width: 50%;
+    margin: 5px 0 30px 0;
+    font-weight: 400;
 }
 
 .viewer {
